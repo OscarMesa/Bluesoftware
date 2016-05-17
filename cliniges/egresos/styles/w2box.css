@@ -1,0 +1,175 @@
+/* w2box layout ©2005 cb */
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background:#660000;
+	}
+#page { 
+		
+	margin: 20px auto;
+	margin-top:-14px;
+	background:#FFFFFF; 
+	border-right: 2px solid #8c8c8c;
+	border-bottom: 2px solid #8c8c8c;
+	border-left: 2px solid #8c8c8c;
+	background-color: #fff;
+	width:720px;
+} 
+#column_r h3 {
+	color:#FFFFFF;
+	margin-top: 0.5em;
+}
+#masthead {
+	width:720px; 
+	height:150px;
+}
+#masthead h1 {
+	color: #000;
+	margin-bottom: 0;
+}
+#masthead h3 {
+	color: #993300;
+	margin-top: 0.5em;
+}		
+#header {
+	height: 87px;
+	
+}	
+#header h1{
+	display: none;
+}
+#formulario {
+	margin: 0;
+	padding: 5px 22px;
+}
+#footerz { 
+	clear: both;
+	width: 760px;
+	
+}
+#navigation {
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+	background-color: #f7ebb9;
+}
+
+html>body #navigation {
+	overflow: hidden;
+}
+
+#navigation ul {
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+}
+#navigation a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding: 5px;
+	border: 1px solid #f7ebb9;
+}
+#navigation a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #B57E6F;
+	background-color: #B57E6F;
+}
+
+#abajo {
+	text-align: center;
+	padding-bottom: 10px;
+}
+html>body #abajo {
+	text-align: center;
+	padding-bottom: 0;
+}
+
+#abajo p {
+	font-size: x-small;
+	color:#993300;
+}
+/* Vínculos */
+a {
+	color:#660000;
+	text-decoration: underline;
+}
+a:hover {
+	color:#000000;
+	text-decoration: none;
+}
+#footer p {
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+}
+
+a img { border:0; }
+
+form { 
+	padding : 0 10px 0 10px; 
+}
+label { float : left;
+	width : 15%;
+	text-align : right;
+	padding-right : 1%;
+}
+input, textarea, select { text-align : left; }
+
+
+#errormsg {
+	text-align: center;
+	height:10px;
+}
+
+#uploadform .small {
+	margin: 0 0 0 15%;
+	font-size: 0.7em;
+}
+
+.red {
+ 	color:#FFFFFF;
+	font-weight: bold;	
+}
+
+table.sortable {	
+	width: 80%;
+	text-align: center;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	height: 20px;
+}
+table.sortable .lefted {text-align: left;}
+table.sortable img  { vertical-align: middle }
+
+table.sortable th {
+	height: 20px;
+	font-size: 1.1em;
+	background-color:#660000;
+	padding: 4px;
+	border: 1px #660000 solid;
+	color:#660000;
+	font-weight: bold;	
+} 
+table.sortable th a {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+table.sortable #th1 {width: 80%;}
+table.sortable #th2 {width: 80%;}
+table.sortable #th3 {width: 40%;}
+table.sortable #th4 {width: 30%;}
+
+
+table.sortable tr.delete {background:#660000;}
+
+table.sortable td {
+	height: 30px;
+	padding: 2px;
+}
