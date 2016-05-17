@@ -1,7 +1,7 @@
 <?php 
     include_once '..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'mvc'.DIRECTORY_SEPARATOR.'funciones'.DIRECTORY_SEPARATOR.'funciones_generales.php';
 
-    include_once dirname(__FILE__).'/../../mvc/modelos/contactos.php';
+    include_once dirname(__FILE__).'/../../mvc/modelos/Contactos.php';
 
     $modeloContacto = new Contactos();
 ?>
