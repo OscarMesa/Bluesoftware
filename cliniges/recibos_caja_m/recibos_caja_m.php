@@ -320,7 +320,7 @@ function clearText(field) {
 			?> <tr>
 				     <td><?php echo $arreglo['no_documento']; ?></td>
 				     <td>
-                <input class="valor_concepto" type="hidden" value="<?php echo $arreglo['valor']; ?>"/>
+                <input class="valor_concepto" type="hidden" value="<?php echo $arreglo['saldo']; ?>"/>
                 <label><?php echo $arreglo['valor']; ?></label>
              </td>
 				     <td ><input type="checkbox" class="chk-abono" value="<?php echo $arreglo['id_nota']?>" name="notas[]"></td>
