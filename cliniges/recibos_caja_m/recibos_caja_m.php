@@ -311,7 +311,7 @@ function clearText(field) {
                 <td style="width: 109px"><div align="center">Valor restante</div>
                 </td>
                 <?php
-                $mysqlinv = " select no_documento,sum(valor) as valor, a.id_nota from  notas a, detalle_nota b where a.id_cedula='$id_paciente' and a.estado=0
+                $mysqlinv = " select no_documento,sum(valor) as valor, a.id_nota, a.id_nota,a.saldo,a.abono from  notas a, detalle_nota b where a.id_cedula='$id_paciente' and a.estado=0
                 and a.id_nota=b.id_nota and cancelado=0 group by no_documento, a.id_nota";
 				mysql_select_db($basedatos, $conectBD);
 				$resultadoinv = mysql_query($mysqlinv, $conectBD) or die (mysql_error());
@@ -325,7 +325,7 @@ function clearText(field) {
              </td>
 				     <td ><input type="checkbox" class="chk-abono" value="<?php echo $arreglo['id_nota']?>" name="notas[]"></td>
 				     <td ><input type="text" class="abono" disabled="disabled" name="abonosnotas[<?php echo $arreglo['id_nota']?>]"/></td>
-             <td class="valor_restante"><?php echo $arreglo['valor'];?></td>
+             <td class="valor_restante"><?php echo $arreglo['saldo'];?></td>
 				 	</tr><?php 
 					 
 	            }?>
