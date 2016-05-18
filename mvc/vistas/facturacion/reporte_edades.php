@@ -177,7 +177,7 @@
 						//	var_dump($interval->d);die;
 							echo "<tr>".
 									"<td>".$data['id']."</td>".
-									"<td>".$data['fecha_ingreso']."</td>".
+									"<td>".date('Y-m-d')."</td>".
 									"<td>".$data['detalle']."</td>".
 									"<td>".number_format($data['saldo'],2,'.',',')."</td>".
 									"<td>". number_format(($t1 += ($data['saldo'] - $data['abono'])),2,'.',',')."</td>".
